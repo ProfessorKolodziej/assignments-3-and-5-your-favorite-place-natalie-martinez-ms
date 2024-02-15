@@ -9,3 +9,11 @@
 		color: red;
 	}
 }
+
+.banner{background-image: image
+    position: relative;
+    min-height: 400px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
