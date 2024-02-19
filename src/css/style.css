@@ -10,6 +10,7 @@
 	}
 }
 
+<<<<<<< HEAD
 .banner{background-image: image
     position: relative;
     min-height: 400px;
@@ -17,3 +18,16 @@
     justify-content: center;
     align-items: center;
 }
+=======
+.page-title {
+	font-size: 10vw;
+	color: #fff
+}
+
+.banner {
+	background-image: url("../images/land-of-ooo.jpeg");
+	position: relative
+}
+
+
+>>>>>>> 86bad41b0a6d0aea4d8677f2d56d5f38e2b1328d
