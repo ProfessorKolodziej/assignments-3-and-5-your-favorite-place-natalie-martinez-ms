@@ -1,42 +1,89 @@
 @media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
+
+
 }
 
 @media screen and (width >= 500px) {
-	#some-id {
-		color: red;
-	}
+
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://www.ffonts.net/JejuHallasan.font');
 
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+	font-family: 'JejuHallasan';
+	src: url("../fonts/JejuHallasan.woff") format('woff');
+}
 
 body {
 	background-color: #70bbdd;
 	color: white;
 	font-family: 'Istok Web', sans-serif;
-	font-weight: 525;
+	font-weight: 600;
 	letter-spacing: 1px;
+	text-shadow: 1px 1px 0 black;
+	text-align: justify;
 }
 
 .page-title {
-	font-size: 10vw;
+	font-size: 13vw;
 	color: #fff;
 	font-family: 'JejuHallasan', sans-serif;
+	text-shadow: 1px 1px 0 black;
+	letter-spacing: 10px;
+
 }
 
 .banner {
 	background-image: url("../images/land-of-ooo.jpeg");
 	background-size: cover;
+	background-position: center;
 	position: relative;
-	min-height: 60vw;
+	min-height: 60vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 }
 
+h2, h3{
+	font-family: 'JejuHallasan', sans-serif;
+	text-shadow: 1px 1px 0 black;
+	text-align:center;
+}
+
+h2 {
+	font-size: 8vw;
+}
+
+.topic-header{
+	text-align:center;
+}
+
+.destinations{
+	text-align: center;
+	font-size: 6vw;
+}
+
+.image-container{
+	display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+
+}
+
+img{
+	max-width: 100%; /* Allow the image to exceed its container's width */
+	max-height: 60vh; /* Ensure the image doesn't exceed its container's height */
+
+}
+
+.foods{
+	text-align: center;
+}
+
+.fav-foods{
+list-style-type: none; /* Remove the bullet points */
+padding-left: 0; /* Remove default left padding */
+}
 
