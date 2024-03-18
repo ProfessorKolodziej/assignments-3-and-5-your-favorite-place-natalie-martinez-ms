@@ -23,6 +23,7 @@ body {
 	letter-spacing: 1px;
 	text-shadow: 1px 1px 0 black;
 	text-align: justify;
+	font-size: 17px;
 }
 
 .page-title {
@@ -46,6 +47,20 @@ body {
 
 }
 
+
+ p{
+	border: 2px solid #333; /* Add border */
+	padding: 20px; /* Add padding */
+	width: 80%; /* Set specific width */
+	margin: auto; /* Center horizontally */
+	margin-bottom: 20px;
+	box-sizing: border-box; /* Include padding and border in the width */
+	text-align: center; /* Center the text horizontally */
+	display: flex; /* Use flexbox */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
 h2, h3{
 	font-family: 'JejuHallasan', sans-serif;
 	text-shadow: 1px 1px 0 black;
@@ -55,6 +70,7 @@ h2, h3{
 h2 {
 	font-size: 8vw;
 }
+
 
 .topic-header{
 	text-align:center;
@@ -77,6 +93,7 @@ img{
 	max-height: 60vh; /* Ensure the image doesn't exceed its container's height */
 
 }
+
 
 .foods{
 	text-align: center;
