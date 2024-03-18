@@ -36,15 +36,29 @@ body {
 }
 
 .banner {
+	position: relative;
 	background-image: url("../images/land-of-ooo.jpeg");
 	background-size: cover;
 	background-position: center;
-	position: relative;
 	min-height: 60vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
+}
+
+.banner::before {
+	content: "";
+	background-image: url("../cloud/Cloud\ 1.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 105%; /* Position the cloud vertically at 50% from the top of the banner */
+	left: 80%; /* Position the cloud horizontally at 50% from the left of the banner */
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 150px;
+	z-index: 1;
 }
 
 
