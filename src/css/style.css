@@ -3,7 +3,7 @@
 
 }
 
-@media screen and (width >= 500px) {
+@media screen and (width >= 768px) {
 
 }
 
@@ -24,6 +24,7 @@ body {
 	text-shadow: 1px 1px 0 black;
 	text-align: justify;
 	font-size: 17px;
+	margin: 0px;
 }
 
 .page-title {
@@ -44,6 +45,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: 2px solid red;
 
 }
 
@@ -52,10 +54,10 @@ body {
 	background-image: url("../cloud/Cloud\ 1.png");
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: top right;
 	position: absolute;
 	top: 105%; /* Position the cloud vertically at 50% from the top of the banner */
-	left: 80%; /* Position the cloud horizontally at 50% from the left of the banner */
-	transform: translate(-50%, -50%);
+	right: 0; /* Position the cloud horizontally at 50% from the left of the banner */
 	width: 200px;
 	height: 150px;
 	z-index: 1;
@@ -70,7 +72,6 @@ body {
 	margin-bottom: 20px;
 	box-sizing: border-box; /* Include padding and border in the width */
 	text-align: center; /* Center the text horizontally */
-	display: flex; /* Use flexbox */
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
 }
