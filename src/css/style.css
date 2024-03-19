@@ -51,6 +51,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .banner::before {
@@ -78,7 +79,7 @@ body {
 	text-align: justify; /* Center the text horizontally */
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
-	line-height: 150%;
+	line-height: 110%;
 }
 
 h2, h3{
