@@ -1,4 +1,11 @@
 @media screen and (width >= 320px) {
+		.image-container {
+			 width: 150%; /* Increase the width of the image for greater zoom */
+			 margin-left: -25%; /* Adjust the negative left margin for positioning */
+			 margin-right: -25%; /* Adjust the negative right margin for positioning */
+			 max-height: 70vh; /* Allow for a slightly larger height */
+
+		}
 
 
 }
@@ -6,7 +13,6 @@
 @media screen and (width >= 768px) {
 
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
@@ -32,7 +38,7 @@ body {
 	color: #fff;
 	font-family: 'JejuHallasan', sans-serif;
 	text-shadow: 1px 1px 0 black;
-	letter-spacing: 10px;
+	letter-spacing: 8px;
 
 }
 
@@ -41,22 +47,20 @@ body {
 	background-image: url("../images/land-of-ooo.jpeg");
 	background-size: cover;
 	background-position: center;
-	min-height: 60vh;
+	min-height: 70vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid red;
-
 }
 
 .banner::before {
 	content: "";
-	background-image: url("../cloud/Cloud\ 1.png");
+	background-image: url("../cloud/cloud_1.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top right;
 	position: absolute;
-	top: 105%; /* Position the cloud vertically at 50% from the top of the banner */
+	top: 90%; /* Position the cloud vertically at 50% from the top of the banner */
 	right: 0; /* Position the cloud horizontally at 50% from the left of the banner */
 	width: 200px;
 	height: 150px;
@@ -71,9 +75,10 @@ body {
 	margin: auto; /* Center horizontally */
 	margin-bottom: 20px;
 	box-sizing: border-box; /* Include padding and border in the width */
-	text-align: center; /* Center the text horizontally */
+	text-align: justify; /* Center the text horizontally */
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
+	line-height: 150%;
 }
 
 h2, h3{
@@ -98,8 +103,9 @@ h2 {
 
 .image-container{
 	display: flex; /* Use flexbox */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	height: 100%; /* Set the height to occupy the entire height of the parent container */
 
 }
 
@@ -117,5 +123,23 @@ img{
 .fav-foods{
 list-style-type: none; /* Remove the bullet points */
 padding-left: 0; /* Remove default left padding */
+
 }
 
+.tip-list{
+	border: 2px solid #333; /* Add border */
+	padding: 20px; /* Add padding */
+	width: 80%; /* Set specific width */
+	margin: auto; /* Center horizontally */
+	margin-bottom: 20px;
+	box-sizing: border-box; /* Include padding and border in the width */
+	text-align: center; /* Center the text horizontally */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	text-align:justify;
+	line-height: 120%;
+}
+
+li{
+	margin-bottom: 15px;
+}
