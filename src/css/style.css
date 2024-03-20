@@ -7,11 +7,6 @@
 
 		}
 
-
-}
-
-@media screen and (width >= 768px) {
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -62,9 +57,10 @@ body {
 	background-position: top right;
 	position: absolute;
 	top: 90%; /* Position the cloud vertically at 50% from the top of the banner */
-	right: 0; /* Position the cloud horizontally at 50% from the left of the banner */
-	width: 200px;
-	height: 150px;
+	right: -2%; /* Position the cloud horizontally at 50% from the left of the banner */
+	width: 30vw;
+	max-width: 250px;
+	height: 200px;
 	z-index: 1;
 }
 
@@ -119,11 +115,14 @@ img{
 
 .foods{
 	text-align: center;
+	font-size: 20px;
+	text-decoration: underline;
 }
 
 .fav-foods{
 list-style-type: none; /* Remove the bullet points */
 padding-left: 0; /* Remove default left padding */
+font-size: 17px;
 
 }
 
@@ -143,4 +142,46 @@ padding-left: 0; /* Remove default left padding */
 
 li{
 	margin-bottom: 15px;
+}
+
+
+
+@media screen and (width >= 768px) { /*CSS rules for table screen*/
+	.page-title {
+		font-size: 12vw;
+		color: #fff;
+		font-family: 'JejuHallasan', sans-serif;
+		text-shadow: 1px 1px 0 black;
+		letter-spacing: 8px;
+
+	}
+
+p{
+	line-height: 170%;
+	font-size: 20px;
+}
+
+.foods{
+	font-size: 25px;
+}
+
+
+
+}
+
+@media screen and (width >= 1280px) {/* Your CSS rules for MacBook Air screens */
+
+	.banner {
+		position: relative;
+		background-image: url("../images/land-of-ooo.jpeg");
+		background-size: cover;
+		background-position: center;
+		min-height: 80vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+
 }
