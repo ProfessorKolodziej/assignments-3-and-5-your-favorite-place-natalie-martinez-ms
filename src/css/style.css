@@ -55,7 +55,7 @@ body {
 }
 
 
- p{
+ p, ol{
 	border: 2px transparent;
 	padding: 20px;
 	width: 80%;
@@ -188,7 +188,7 @@ li{
 	}
 
 
-	p{
+	p, ol{
 		line-height: 170%;
 		font-size: 20px;
 	}
